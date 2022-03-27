@@ -41,7 +41,7 @@ app.get('/', (req, res) => {
 
 app.get('/catalago', (req, res)=> {
     res.render('about', {
-        tittle: 'Catalago'
+        tittle: 'Catálogo'
     })
 })
 
