@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs') %> 
+</head>
+<body>
+    <section class="register">
+        <%- include('partials/header.ejs') %> 
+
+        <div class="content-register">
+            <div class="into">
+                <h1 class="sub-tittle">Cadastro</h1>
+                <p class="info">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem pariatur culpa dolorem accusamus iste enim veniam distinctio rem, sequi esse incidunt recusandae aspernatur quaerat dolore quod voluptas alias excepturi itaque!
+                </p>
+            </div>
+            <div class="formulario">
+                <form action="save-records" method="post"> 
+                    <div class="input-area">
+                        <label>Nome:</label>
+                        <input type="text" name="nome" placeholder="Digite o seu nome">
+                    </div>
+                    <div class="input-area">
+                        <label>E-mail:</label>
+                        <input type="email" name="email" placeholder="Digite o seu email">
+                    </div>
+                    <div class="input-area">
+                        <label>Comentarios:</label>
+                        <textarea name="comentario" placeholder="Digite aqui o seu comentario"></textarea>
+                    </div>
+                    <button class="button" type="submit">Cadastrar</button>
+                </form>
+            </div>
+        </div>
+
+        <%- include('partials/footer.ejs')  %>
+    </section>
+    <%- include('partials/foot.ejs')  %> 
+</body>
+</html>

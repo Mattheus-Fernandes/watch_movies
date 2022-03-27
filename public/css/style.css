@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.tittle {
+    color: white;
+    font-size: 24px;
+}
+
+.span-name {
+    color: red;
+    font-size: 43px;
+    text-decoration: none;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: white;
+    padding: 30px;
+    text-decoration: none;
+}
+
+.home,
+.catalago {
+    height: 120vh;
+    background-image: url(https://wallpaperaccess.com/full/2000048.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.content {
+    width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.sub-tittle {
+    font-size: 40px;
+}
+
+.info {
+    font-size: 19px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.movies {
+    display: flex;
+    justify-content: space-around;
+}
+
+.movie {
+    text-align: center;
+    padding: 5px 10px;
+    width: 300px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+}
+
+.img-movie {
+    width: 222px;
+    margin-bottom: 10px;
+}
+
+.name-movie {
+    margin-bottom: 15px;
+}
+
+/*****************************************/
+
+.catalago {
+    height: auto;
+    overflow-x: hidden;
+}
+
+
+.content-catalago {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.tittle-catalago {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.genere {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.movies-catalago{
+    width: auto;
+    border: 2px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.area {
+    margin-top: 30px;
+}
+
+.navbar-movies {
+    width: 100%;
+}
+
+.navbar-movies ul {
+    display: flex;
+    overflow-x: scroll;
+}
+
+.navbar-movies ul::-webkit-scrollbar {
+    background: #ff000000;
+    height: 8px;
+}
+
+.navbar-movies ul::-webkit-scrollbar-thumb {
+    background: #b4afb0;
+    border-radius: 10px;
+}
+
+
+.navbar-movies ul li {
+    list-style: none;
+    display: flex;
+    position: relative;
+    border-right: 4px solid gray;
+}
+
+.navbar-movies ul li:last-of-type{
+    border: none;
+}
+
+.navbar-movies ul li .image-movie {
+    height: 186px;
+    width: 364px;
+    cursor: pointer;
+}
+
+.movie-name {
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #000000b3;
+    padding: 10px;
+}
+
+
+
+/*****************************************/
+
+.register {
+    background-image: url(https://wallpaperaccess.com/full/2000048.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.content-register {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.into {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.formulario {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 22px;
+    color: red;
+}
+
+input{
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+textarea {
+    height: 130px;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    font-size: 20px;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+}
+
+.button {
+    width: 150px;
+    height: 30px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.footer {
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 30px;
+    margin-top: 40px;
+}

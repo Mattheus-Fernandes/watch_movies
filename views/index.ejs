@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('partials/head.ejs') %> 
+</head>
+<body>
+    <section class="home">
+        <%- include('partials/header.ejs') %> 
+
+        <div class="content">
+            <div>
+                <% content.forEach(item => { %>
+                    <h1 class="sub-tittle">
+                        <%= item.sub_tittle %> 
+                    </h1>
+                    <p class="info">
+                        <%= item.info %> 
+                    </p>
+                <% }) %>
+
+            </div>
+
+            <div class="movies">
+                <div class="movie">
+                    <img class="img-movie" src="https://sm.ign.com/ign_br/screenshot/default/the-batman-2021-official-logo-featured-01_3z62.jpg" >
+                    <% content.forEach(item => { %>
+                        <h4 class="name-movie">
+                            <%= item.batman %> 
+                        </h4>
+                        <p>
+                            <%= item.resume_batman %> 
+                        </p>
+                    <% }) %>
+                </div>
+
+                <div class="movie">
+                    <img class="img-movie" src="https://sm.ign.com/ign_br/screenshot/default/blob_a58q.jpg" >
+                    <% content.forEach(item => { %>
+                        <h4 class="name-movie">
+                            <%= item.spiderman %> 
+                        </h4>
+                        <p>
+                            <%= item.resume_spiderman %> 
+                        </p>
+                    <% }) %>
+                </div>
+
+                <div class="movie">
+                    <img class="img-movie" src="https://t.ctcdn.com.br/anA1RsOr7xv8PprAonJVM-kLyJM=/1280x720/smart/filters:format(webp)/i373927.jpeg" >
+                    <% content.forEach(item => { %>
+                        <h4 class="name-movie">
+                            <%= item.morbius %> 
+                        </h4>
+                        <p>
+                            <%= item.resume_morbius %> 
+                        </p>
+                    <% }) %>
+                </div>
+
+            </div>
+            
+        </div>
+        <%- include('partials/footer.ejs')  %> 
+    </section>
+    <%- include('partials/foot.ejs')  %> 
+</body>
+</html>
